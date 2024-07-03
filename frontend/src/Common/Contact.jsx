@@ -38,7 +38,7 @@ const Contact = () => {
                 subject,
                 message
             };
-            await axios.post('http://localhost:4000/contact', contact);
+            await axios.post('https://eventssunflower-2.onrender.com/contact', contact);
             reset();
             toast.dismiss(loadingToast);
             toast.success("Event successfully added");

@@ -194,7 +194,7 @@ const BookedEvent = () => {
   useEffect(() => {
     const fetchPaymentHistory = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/orders/${user?.email}`);
+        const response = await axios.get(`https://eventssunflower-2.onrender.com/orders/${user?.email}`);
         if (response.status !== 200) {
           throw new Error("Failed to fetch payment history");
         }

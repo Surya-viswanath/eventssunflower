@@ -243,7 +243,7 @@ function Paymentpage() {
   };
 
   const fetchEvent = async () => {
-    const response = await axios.get(`http://localhost:4000/event/${_id}`);
+    const response = await axios.get(`https://eventssunflower-2.onrender.com/event/${_id}`);
     if (response.status !== 200) {
       throw new Error("Network response was not ok");
     }

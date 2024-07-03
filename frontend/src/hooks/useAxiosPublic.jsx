@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosPublic = axios.create({
-  baseURL: "http://localhost:4000",
+  baseURL: "https://eventssunflower-2.onrender.com",
   // baseURL: "http://localhost:8080",
 });
 

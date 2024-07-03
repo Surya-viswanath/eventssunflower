@@ -10,7 +10,7 @@ function ViewClient() {
     useEffect(() => {
         const client = async () => {
             try {
-                const responses = await axios.get('http://localhost:4000/get');
+                const responses = await axios.get('https://eventssunflower-2.onrender.com/get');
                 setFirst(responses.data);
                 console.log(responses.data); 
             } catch (error) {
@@ -24,7 +24,7 @@ function ViewClient() {
     const View = first.filter((item) => item.Email === getmail);
     const handleDelete = async (id) => {
         try {
-          await axios.delete(`http://localhost:4000/delete/${id}`);
+          await axios.delete(`https://eventssunflower-2.onrender.com/delete/${id}`);
          
           setFirst(first.filter(list => list._id !== id));
         } catch (error) {

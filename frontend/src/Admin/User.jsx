@@ -8,7 +8,7 @@ function User() {
     useEffect(() => {
         const handleItems = async () => {
           try {
-            const response = await axios.get('http://localhost:4000/getclient');
+            const response = await axios.get('https://eventssunflower-2.onrender.com/getclient');
             setCustomer(response.data);
           } catch (error) {
             console.error('Error fetching data:', error);

@@ -1,6 +1,6 @@
 
 
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
 const Usereve = require('../../modal/User.js');
 const userSignIn = async (req, res) => {
    // console.log('Received login request with:', req.body); // Log the received data
@@ -21,13 +21,23 @@ const userSignIn = async (req, res) => {
            return res.status(400).json({ message: 'Invalid email or password' });
        }
 
-       // Compare the provided password with the hashed password
-       const isPasswordValid = await bcrypt.compare(password, existingUser.password);
-      //  console.log('isPasswordValid:', isPasswordValid); // Log the result of password comparison
-       if (!isPasswordValid) {
-           console.log('Invalid password');
-           return res.status(400).json({ message: 'Invalid email or password' });
-       }
+    //    // Compare the provided password with the hashed password
+    //    const isPasswordValid = await bcrypt.compare(password, existingUser.password);
+    // //  const isPasswordValid = await bcrypt.compare(password, existingUser.password);
+    //   //  console.log('isPasswordValid:', isPasswordValid); // Log the result of password comparison
+    //    if (!isPasswordValid) {
+    //        console.log('Invalid password');
+    //        return res.status(400).json({ message: 'Invalid email or password' });
+    //    }
+
+
+     // Compare the provided password with the hashed password
+     const isPasswordValid = await bcrypt.compare(password, existingUser.password);
+     //  const isPasswordValid = await bcrypt.compare(password, existingUser.password);
+       //  console.log('isPasswordValid:', isPasswordValid); // Log the result of password comparison
+        if (existingUser.password === password) {
+            res.send("login successful");
+        }
 
        // Exclude the password from the user object
        const userResponse = { ...existingUser.toObject(), password: undefined };

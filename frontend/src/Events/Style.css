@@ -1,0 +1,264 @@
+
+.max-w-screen-xl {
+    max-width: 1280px; /* Adjust as per your design requirements */
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-6 {
+    margin-top: 1.5rem; /* 24px */
+    margin-bottom: 1.5rem; /* 24px */
+}
+.text-3xl {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.grid {
+    display: grid;
+}
+
+.md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.p-2 {
+    padding: 0.5rem; /* Adjust as needed */
+}
+
+.gap-12 {
+    gap: 3rem; /* Adjust as needed */
+}
+
+.my-8 {
+    margin-top: 2rem; /* Adjust as needed */
+    margin-bottom: 2rem; /* Adjust as needed */
+}
+
+.col-span-3 {
+    grid-column: span 3; /* This sets the element to span across 3 columns in a grid */
+}
+
+.custom-container {
+    border: 1px solid #CBD5E0; /* Border color */
+    border-radius: 0.5rem; /* Rounded corners */
+    background-color: rgba(254, 215, 215, 0.5); /* Rose color with opacity */
+    padding: 1rem; /* Padding around the container */
+}
+
+.custom-text {
+    font-size: 1rem; /* Base font size */
+    font-weight: 600; /* Semi-bold font weight */
+    line-height: 1.75; /* Line height */
+    color: #374151; /* Text color */
+}
+
+.mt-10 {
+    margin-top: 2.5rem; /* 40px */
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.gap-x-6 {
+    column-gap: 1.5rem; /* 24px */
+}
+
+.gap-y-8 {
+    row-gap: 2rem; /* 32px */
+}
+
+@media (min-width: 640px) {
+    .sm\:grid-cols-6 {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 640px) {
+    .sm\:col-span-3 {
+        grid-column: span 3 / span 3;
+    }
+}
+.block {
+    display: block;
+}
+
+.text-sm {
+    font-size: 0.875rem; /* 14px */
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.leading-6 {
+    line-height: 1.5rem; /* 24px */
+}
+
+.text-gray-900 {
+    color: #1a202c; /* Text color (gray-900) */
+}
+
+.mt-2 {
+    margin-top: 0.5rem; /* 8px */
+}
+
+.custom-input {
+    display: block;
+    width: 100%;
+    border-radius: 0.375rem; /* Rounded corners */
+    border: 0;
+    padding-top: 0.375rem; /* 1.5 x 4px */
+    padding-bottom: 0.375rem; /* 1.5 x 4px */
+    color: #1a202c; /* Gray 900 */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Small shadow */
+    position: relative;
+    outline: 1px solid #cbd5e0; /* Ring color */
+    outline-offset: -1px; /* Inset ring */
+    padding-left: 0.5rem; /* 2 x 4px */
+    font-size: 0.875rem; /* Small text */
+    line-height: 1.5rem; /* Small leading */
+}
+
+.custom-input::placeholder {
+    color: #a0aec0; /* Placeholder text color */
+}
+
+.custom-input:focus {
+    outline: 2px solid #5a67d8; /* Focus ring color */
+    outline-offset: -2px; /* Inset ring on focus */
+}
+
+.md\:col-span-2 {
+    grid-column: span 2;
+}
+
+.col-span-3 {
+    grid-column: span 3;
+}
+
+.p-4 {
+    padding: 1rem; /* Adjust as needed */
+}
+
+.md\:p-0 {
+    padding: 0; /* No padding on medium screens */
+}
+
+.bg-rose-50\/50 {
+    background-color: rgba(245, 215, 215, 0.5); /* Adjust color and opacity */
+}
+
+.rounded-lg {
+    border-radius: 0.5rem; /* Adjust border radius as needed */
+}
+
+.border-gray-400 {
+    border-color: #cbd5e0; /* Adjust border color */
+}
+
+.border {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem; /* Adjust border radius as needed */
+}
+
+.sm\:p-12 {
+    padding: 3rem; /* Adjust padding for small screens */
+}
+
+.mb-4 {
+    margin-bottom: 1rem; /* Adjust margin bottom as needed */
+}
+
+.text-xl {
+    font-size: 1.25rem; /* Adjust font size as needed */
+}
+
+.font-medium {
+    font-weight: 500; /* Adjust font weight as needed */
+}
+
+.text-gray-500 {
+    color: #6b7280; /* Adjust color as needed */
+}
+
+.dark .text-gray-400 {
+    color: #9ca3af; /* Adjust dark mode color as needed */
+}
+
+.custom-container1 {
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    position: relative;
+}
+.custom-position {
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 8px; /* Adjust as needed */
+}
+
+@media (min-width: 768px) {
+    .custom-position {
+        left: 36px; /* Adjust for medium screens */
+    }
+}
+
+.custom-heading {
+    font-size: 3rem; /* Equivalent to text-5xl in Tailwind */
+    color: #fff; /* Equivalent to text-white in Tailwind */
+    font-weight: bold; /* Equivalent to font-bold in Tailwind */
+}
+
+.custom-text1 {
+    font-size: 1.25rem; /* Equivalent to text-xl in Tailwind */
+    margin-top: 0.5rem; /* Equivalent to mt-2 in Tailwind */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Equivalent to gap-2 in Tailwind */
+    color: #fff; /* Equivalent to text-white in Tailwind */
+}
+
+
+.custom-textarea {
+    display: block;
+    width: 100%;
+    padding: 1.5rem 0;
+    border: none;
+    border-radius: 0.375rem; /* 6px */
+    color: #1a202c; /* text-gray-900 */
+    box-shadow: 0 0 0 1px rgba(209, 213, 219, 0.5); /* ring-gray-400 */
+    background-color: #ffffff; /* placeholder:text-gray-400 */
+    outline: none;
+    transition: box-shadow 0.15s ease-in-out;
+    font-size: 0.875rem; /* sm:text-sm */
+    line-height: 1.25rem; /* sm:leading-6 */
+    padding-left: 0.75rem; /* pl-3 */
+}
+
+.custom-textarea::placeholder {
+    color: #9ca3af; /* placeholder:text-gray-400 */
+}
+
+.custom-textarea:focus {
+    box-shadow: inset 0 0 0 2px rgba(79, 70, 229, 0.5), 0 0 0 1px rgba(99, 102, 241, 0.5); /* focus:ring-2 and focus:ring-indigo-600 */
+}

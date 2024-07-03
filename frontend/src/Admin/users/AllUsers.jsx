@@ -252,7 +252,7 @@ const AllUsers = () => {
     useEffect(() => {
         const handleItems = async () => {
           try {
-            const response = await axios.get('http://localhost:4000/users');
+            const response = await axios.get('https://eventssunflower-2.onrender.com/users');
             setUsers(response.data);
           } catch (error) {
             console.error('Error fetching data:', error);
@@ -295,7 +295,7 @@ const AllUsers = () => {
     // }
     const handleDelete = async (id) => {
         try {
-          await axios.delete(`http://localhost:4000/delete-user/${id}`);
+          await axios.delete(`https://eventssunflower-2.onrender.com/delete-user/${id}`);
           // Update the state after successful deletion
           setUsers(Users.filter(list => list._id !== id));
         } catch (error) {

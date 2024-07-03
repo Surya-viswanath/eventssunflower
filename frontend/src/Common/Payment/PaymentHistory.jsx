@@ -15,7 +15,7 @@ const PaymentHistory = () => {
 
   const fetchPaymentHistory = async () => {
     const response = await axios.get(
-      `http://localhost:4000/order/${user?.email}`
+      `https://eventssunflower-2.onrender.com/order/${user?.email}`
     );
     if (!response.status === 200) {
       throw new Error("Failed to fetch payment history");

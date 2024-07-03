@@ -27,7 +27,7 @@ const AllEvents = () => {
 
     const fetchEvents = async () => {
         try {
-            const response = await axios.get("http://localhost:4000/events");
+            const response = await axios.get("https://eventssunflower-2.onrender.com/events");
             setEvents(response.data); // Update events state with fetched data
         } catch (error) {
             console.error("Error fetching events:", error);
@@ -113,7 +113,7 @@ const AllEvents = () => {
                 confirmButtonText: "Yes, delete it!",
             });
             if (swalConfirm.isConfirmed) {
-                await axios.delete(`http://localhost:4000/delete-event/${id}`);
+                await axios.delete(`https://eventssunflower-2.onrender.com/delete-event/${id}`);
                 // fetchEvents(); // Refetch events after deletion
                 setEvents(events.filter(list => list._id !== id));
                 Swal.fire({

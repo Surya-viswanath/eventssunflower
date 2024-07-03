@@ -15,7 +15,7 @@ import Container from '../Common/Container';
 const PopularEvents = () => {
     const fetchEvents = async () => {
         try {
-          const response = await axios.get("http://localhost:4000/events");
+          const response = await axios.get("https://eventssunflower-2.onrender.com/events");
           return response.data; 
         } catch (error) {
           return error.massage;

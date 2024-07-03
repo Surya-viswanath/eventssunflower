@@ -121,6 +121,18 @@ export function AuthProvider({ children }) {
         }
     };
 
+    // const login = async (email, password) => {
+    //     try {
+    //         const response = await axios.post('http://localhost:4000/login', { email, password });
+    //         setUser(response.data.user);
+    //         console.log('Received response:', response.data);
+    //         return response;
+    //     } catch (error) {
+    //         console.error('Login failed', error);
+    //         throw error;
+    //     }
+    // };
+
     const login = async (email, password) => {
         try {
             const response = await axios.post('http://localhost:4000/login', { email, password });
@@ -129,10 +141,9 @@ export function AuthProvider({ children }) {
             return response;
         } catch (error) {
             console.error('Login failed', error);
-            throw error;
+            throw error; // Ensure errors are propagated correctly
         }
     };
-
     const logout = () => {
         setUser(null);
     };

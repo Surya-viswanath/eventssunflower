@@ -1,20 +1,17 @@
 const express = require('express');
 
-const {clientSignup,getclient,deleteclient} = require('../controller/Clientsignup');
+// const {clientSignup,getclient,deleteclient} = require('../controller/Clientsignup');
 const jwttoken = require('../Token/token');
 const protect = require('../Middlewear/Tocken');
-const login = require('../controller/Login');
+// const login = require('../controller/Login');
 
 // const { getevents, Createvents, deleteevent } = require('../controller/Eventss');
-const { adminSignup } = require('../controller/Adminsignup');
-const adminlogin = require('../controller/Adminlogin');
+// const { adminSignup } = require('../controller/Adminsignup');
 
-const managerlogin = require('../controller/Managerlogin');
-const { managerSignup, getmanager, deletemanager } = require('../controller/Managersign');
 const { addEvent, Getevent, singleEvent } = require('../controller/event/eventControll');
 // const { userSignUp } = require('../controller/user/userSignUpp');
 const userSignIn = require('../controller/user/userSignIn');
-const { authVerify } = require('../controller/auth/authVerify');
+
 const payment = require('../controller/payment/getPayment');
 // const { payment } = require('../controller/payment/getPayment');
 // const payment = require('../controller/payment/getPayment');
@@ -43,11 +40,11 @@ const router = express.Router();
 const middleware=[protect]
 
 // router.route('/Signupclient').post(clientSignup)
-router.route('/Signupadmin').post(adminSignup)
+// router.route('/Signupadmin').post(adminSignup)
 // router.route('/verify').get(middleware,clientSignup)
 router.route('/Signupclient').post(userSignUp)
 router.route('/login').post(userSignIn)
-router.route('/token-verify').post(authVerify)
+// router.route('/token-verify').post(authVerify)
 
 
 
@@ -61,14 +58,9 @@ router.route('/contact').post(postContact)
 router.route('/contact').get(findcontact) 
 
 
-router.route('/adminlogin').post(adminlogin)
-router.route('/managerlogin').post(managerlogin)
-router.route('/Signupmanager').post(managerSignup)
+// 
 
-router.route('/getclient').get(getclient)  
-router.route('/getmanager').get(getmanager)  
-router.route('/deletemanager/:id').delete(deletemanager)
-router.route('/delete/:id').delete(deleteclient)
+
 
 
 router.route('/delete-event/:id').delete(deleteevent)

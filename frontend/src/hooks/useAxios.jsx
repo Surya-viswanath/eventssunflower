@@ -5,7 +5,7 @@ import { useAuth } from "../auth/AuthContext";
 // import useAuth from "./useAuth";
 
 const axiosSecure = axios.create({
-  baseURL: 'hhttp://localhost:4000'
+  baseURL: 'https://eventssunflower-2.onrender.com'
   // baseURL: "http://localhost:8080",
 });
 

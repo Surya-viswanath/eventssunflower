@@ -30,7 +30,7 @@ function EventList() {
   const handleSubmit =async(event)=>{
     event.preventDefault()
     try{
-    const display =await axios.post('http://localhost:4000/eventcreate',{Email,Time,Type,Place,Date})
+    const display =await axios.post('https://eventssunflower-2.onrender.com/eventcreate',{Email,Time,Type,Place,Date})
     console.log(display.data)
     navigate(-1)
 }

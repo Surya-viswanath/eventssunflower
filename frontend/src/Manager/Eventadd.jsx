@@ -32,7 +32,7 @@ const email = user.email;
                     image: imageResult, 
                     date ,email
                 };
-                await axios.post('http://localhost:4000/add-event', newEvent);
+                await axios.post('https://eventssunflower-2.onrender.com/add-event', newEvent);
                 reset();
                 toast.dismiss(loadingToast);
                 toast.success("Event successfully added");

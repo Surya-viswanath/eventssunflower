@@ -160,7 +160,7 @@ function Displayevents() {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await axios.get("http://localhost:4000/events");
+                const response = await axios.get("https://eventssunflower-2.onrender.com/events");
                 setAllEvents(response.data);
                 setFilteredEvents(response.data);
                 setIsLoading(false);

@@ -12,7 +12,7 @@ import EventCard from "../allEvents/EventCard";
 const FeatureEvents = () => {
   const fetchEvents = async () => {
     try {
-      const response = await axios.get("https://dream-craft-server.vercel.app/events");
+      const response = await axios.get("https://eventssunflower-2.onrender.com/events");
       return response.data; 
     } catch (error) {
       return error.massage;

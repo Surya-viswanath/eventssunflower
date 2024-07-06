@@ -484,7 +484,7 @@ function Eventdetails() {
     useEffect(()=>{
         const handleitems =async()=>{
          try{
-           const response = await axios.get('http://localhost:4000/events')     
+           const response = await axios.get('https://eventssunflower-2.onrender.com/events')     
          setEvent(response.data)
         //  console.log(event);
          }
@@ -500,7 +500,7 @@ function Eventdetails() {
  useEffect(() => {
     const fetchRecentEvents = async () => {
       try {
-        const response = await fetch("http://localhost:4000/events");
+        const response = await fetch("https://eventssunflower-2.onrender.com/events");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
